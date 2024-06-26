@@ -1,0 +1,51 @@
+@charset 'utf-8';
+
+/* NaverNanumSquareNeo */
+@font-face{ 
+	font-weight:100; /* Light */
+	font-style:normal;
+	font-family:"NaverNanumSquareNeo";
+	src:url('NanumSquareNeoTTF-aLt.eot'); 
+	src:url('NanumSquareNeoTTF-aLt.eot?#iefix') format('embedded-opentype'), 
+		url('NanumSquareNeoTTF-aLt.woff') format('woff');
+}
+@font-face{ 
+	font-weight:400; /* Regular */
+	font-style:normal;
+	font-family:"NaverNanumSquareNeo";
+	src:url('NanumSquareNeoTTF-bRg.eot'); 
+	src:url('NanumSquareNeoTTF-bRg.eot?#iefix') format('embedded-opentype'), 
+	url('NanumSquareNeoTTF-bRg.woff') format('woff'),
+	url('NanumSquareNeoTTF-bRg.woff2') format('woff2'),
+	url('NanumSquareNeoTTF-bRg.otf') format('opentype');
+}
+@font-face{ 
+	font-weight:700; /* Bold */
+	font-style:normal;
+	font-family:"NaverNanumSquareNeo";
+	src:url('NanumSquareNeoTTF-cBd.eot'); 
+	src:url('NanumSquareNeoTTF-cBd.eot?#iefix') format('embedded-opentype'), 
+	url('NanumSquareNeoTTF-cBd.woff') format('woff'),
+	url('NanumSquareNeoTTF-cBd.woff2') format('woff2'),
+	url('NanumSquareNeoTTF-cBd.otf') format('opentype');
+}
+@font-face{
+	font-weight:800; /* Extra Bold */
+	font-style:normal;
+	font-family:"NaverNanumSquareNeo";
+	src:url('NanumSquareNeoTTF-dEb.eot'); 
+	src:url('NanumSquareNeoTTF-dEb.eot?#iefix') format('embedded-opentype'), 
+	url('NanumSquareNeoTTF-dEb.woff') format('woff'),
+	url('NanumSquareNeoTTF-dEb.woff2') format('woff2'),
+	url('NanumSquareNeoTTF-dEb.otf') format('opentype');
+}
+@font-face{
+	font-weight:900; /* Heavy */
+	font-style:normal;
+	font-family:"NaverNanumSquareNeo";
+	src:url('NanumSquareNeoTTF-eHv.eot'); 
+	src:url('NanumSquareNeoTTF-eHv.eot?#iefix') format('embedded-opentype'), 
+	url('NanumSquareNeoTTF-eHv.woff') format('woff'),
+	url('NanumSquareNeoTTF-eHv.woff2') format('woff2'),
+	url('NanumSquareNeoTTF-eHv.otf') format('opentype');
+}

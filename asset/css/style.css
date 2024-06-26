@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+.wrap{position:relative;overflow:hidden;min-width:1280px;}
+.fullpage{width:100%;height:auto;position:relative;overflow-y:auto;}
+.fullpage::-webkit-scrollbar {width: 6px;}
+.fullpage::-webkit-scrollbar-thumb {background-color:#808080;}
+.fullpage::-webkit-scrollbar-track {background-color:#e8e8e8;}
+.section{position:relative;width:100%;height:100%;display:table;box-sizing:border-box;}
+.container{height:100%;display:table-cell;vertical-align:middle;text-align:center;}
+.nanummyeongjo{font-family: 'Nanum Myeongjo', serif;}
+
+/* header */
+#header{position:absolute;width:100%;z-index:100;padding-top:50px;}
+#header .inner{width:1200px;margin:0 auto;display: flex; justify-content: space-between;align-items: center;}
+#header .logo{width:284px;height:28px;}
+#header .logo a{display:block;width:100%;height:100%;font-size:0;line-height:0;background:url("../img/logo.png") no-repeat center;background-size:100% auto;}
+#header .gnb{}
+#header .gnb ul{font-size:0;}
+#header .gnb ul li{position:relative;display:inline-block;margin-left:12px;padding-left:12px;vertical-align:middle;}
+#header .gnb ul li > a{font-size:18px;line-height:22px;font-weight:700;color:#fff;}
+#header .gnb ul li:before{position:absolute;left:0;top:50%;margin-top:-4px;width:1px;height:10px;background-color:#fff;content:"";clear:both;display:block;}
+#header .gnb ul li:first-child{margin-left:0;padding-left:0;}
+#header .gnb ul li:first-child:before{display:none;}
+
+/* visual */
+.main_visual{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;}
+.main_visual .main_slider{position:relative;width:100%;height:100%;overflow:hidden;}
+.main_visual .main_slider .visual{float:left;width:100%;height:100%;font-size:0;background:no-repeat center;background-size:cover;}
+.main_visual .main_slider .visual.v01{background-image:url('../img/pc_ivf_gate_main.png');}
+.main_visual .main_slider .slick-list,
+.main_visual .main_slider .slick-track{height:100%;}
+
+.main_wrap{position:relative;padding:150px 0 50px;display:table-cell;vertical-align:middle;}
+.main_conts{position:relative;max-width:1200px;margin:0 auto;z-index:2;text-align:center;}
+.main_conts .txt_box{margin-bottom:35px;}
+.main_conts .txt_box .tit{font-size:24px;color:#fff;line-height:28px;font-weight:700;}
+.main_conts .txt_box .tit2{display:block;margin:20px auto 25px;font-size:52px;color:#fff;font-weight:800;line-height:58px;}
+
+.main_conts .top_conts_area{display:flex;justify-content:space-between;align-items:start;}
+.main_conts .top_conts_area .video_area{}
+.main_conts .top_conts_area .video_slider_area{position:relative;width:593px;/*height:334px;*/overflow:hidden;}
+.main_conts .top_conts_area .video_area .video{width:100%;height:100%;}
+.main_conts .top_conts_area .txt_area{width:auto;margin-left:4px;text-align: left;}
+.main_conts .top_conts_area .txt_area .tit{width:386px;font-size:18px;line-height:36px;background:rgba(0,0,0,.2); text-align: center;}
+.main_conts .top_conts_area .txt_area .tit2{line-height:70px;}
+.main_conts .top_conts_area .txt_area .desc{font-size:18px;line-height:32px;color:#fff;}
+
+.main_conts .link_box_area {margin-top:32px;}
+.main_conts .link_box_list {display:flex;justify-content:space-between;align-items:start;}
+.main_conts .link_box_list + .link_box_list {margin-top:34px;}
+.main_conts .link_box_list li {width:186px;}
+.main_conts .link_box_list li + li {margin-left:17px;}
+.main_conts .link_box_list.v2 li {width:80px;}
+.main_conts .link_box_list.v2 li + li {margin-left:14px;}
+.main_conts .link_box_list li a {}
+.main_conts .link_box_list li a > span {display:block;font-size:18px;line-height:22px;color:#fff;padding-top:121px;position:relative;letter-spacing:-0.6px;}
+.main_conts .link_box_list li a > span:before {content:'';display:block;width:186px;height:110px;background:url('../img/ivf_01.png') no-repeat center;position:absolute;top:0; left:0;}
+.main_conts .link_box_list li.ivf_01 a > span:before {background:url('../img/ivf_01.png') no-repeat center;}
+.main_conts .link_box_list li.ivf_02 a > span:before {background:url('../img/ivf_02.png') no-repeat center;}
+.main_conts .link_box_list li.ivf_03 a > span:before {background:url('../img/ivf_06.png') no-repeat center;}
+.main_conts .link_box_list li.ivf_04 a > span:before {background:url('../img/ivf_03.png') no-repeat center;}
+.main_conts .link_box_list li.ivf_05 a > span:before {background:url('../img/ivf_04.png') no-repeat center;}
+.main_conts .link_box_list li.ivf_06 a > span:before {background:url('../img/ivf_05.png') no-repeat center;}
+.main_conts .link_box_list li a:hover > span:before {background:url('../img/ivf_01_hover.png') no-repeat center;}
+.main_conts .link_box_list li.ivf_01 a:hover > span:before {background:url('../img/ivf_01_hover.png') no-repeat center;}
+.main_conts .link_box_list li.ivf_02 a:hover > span:before {background:url('../img/ivf_02_hover.png') no-repeat center;}
+.main_conts .link_box_list li.ivf_03 a:hover > span:before {background:url('../img/ivf_06_hover.png') no-repeat center;}
+.main_conts .link_box_list li.ivf_04 a:hover > span:before {background:url('../img/ivf_03_hover.png') no-repeat center;}
+.main_conts .link_box_list li.ivf_05 a:hover > span:before {background:url('../img/ivf_04_hover.png') no-repeat center;}
+.main_conts .link_box_list li.ivf_06 a:hover > span:before {background:url('../img/ivf_05_hover.png') no-repeat center;}
+.main_conts .link_box_list.v2 li a > span {font-size:14px;line-height:20px;color:#fff;padding-top:115px;}
+.main_conts .link_box_list.v2 li a > span:before {content:'';display:block;width:80px;height:100px;background:url('../img/aus_01.png') no-repeat center;position:absolute;top:0; left:0;}
+.main_conts .link_box_list.v2 li.aus_01 a > span:before {background:url('../img/aus_01.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_02 a > span:before {background:url('../img/aus_02.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_03 a > span:before {background:url('../img/aus_03.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_04 a > span:before {background:url('../img/aus_04.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_05 a > span:before {background:url('../img/aus_05.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_06 a > span:before {background:url('../img/aus_06.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_07 a > span:before {background:url('../img/aus_07.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_08 a > span:before {background:url('../img/aus_08.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_09 a > span:before {background:url('../img/aus_09.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_10 a > span:before {background:url('../img/aus_10.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_11 a > span:before {background:url('../img/aus_11.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_12 a > span:before {background:url('../img/aus_12.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_13 a > span:before {background:url('../img/aus_13.png') no-repeat center;}
+.main_conts .link_box_list.v2 li a:hover > span:before {background:url('../img/aus_01_hover.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_01 a:hover > span:before {background:url('../img/aus_01_hover.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_02 a:hover > span:before {background:url('../img/aus_02_hover.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_03 a:hover > span:before {background:url('../img/aus_03_hover.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_04 a:hover > span:before {background:url('../img/aus_04_hover.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_05 a:hover > span:before {background:url('../img/aus_05_hover.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_06 a:hover > span:before {background:url('../img/aus_06_hover.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_07 a:hover > span:before {background:url('../img/aus_07_hover.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_08 a:hover > span:before {background:url('../img/aus_08_hover.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_09 a:hover > span:before {background:url('../img/aus_09_hover.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_10 a:hover > span:before {background:url('../img/aus_10_hover.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_11 a:hover > span:before {background:url('../img/aus_11_hover.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_12 a:hover > span:before {background:url('../img/aus_12_hover.png') no-repeat center;}
+.main_conts .link_box_list.v2 li.aus_13 a:hover > span:before {background:url('../img/aus_13_hover.png') no-repeat center;}
+
+@media (max-width:1280px) {
+}

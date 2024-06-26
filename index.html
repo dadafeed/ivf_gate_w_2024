@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>차 여성의학연구소 IVF센터</title>
+    <link rel="stylesheet" type="text/css" href="/asset/font/font.css" />
+    <link rel="stylesheet" type="text/css" href="/asset/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/asset/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/asset/css/slick.css" />
+    <script type="text/javascript" src="/asset/js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="/asset/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/asset/js/slick.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            VideoSlider();
+        });
+
+        function VideoSlider() {
+            $(".video_slider").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                // autoplay: true, /* 영상 1개 자동 재생일 시 주석 해제 */
+                // autoplaySpeed: 1800,
+                speed: 800,
+                fade: true,
+                easing: 'linear',
+                infinite: true,
+                draggable: false,
+                pauseOnHover: true,
+                // dots: false, /* dots 사용 안할 시 주석 해제*/
+                // arrows: false, /* arrows 사용 안할 시 주석 해제*/
+                dots: true,
+                arrows: true,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next'),
+                customPaging: function (slider, i) {
+                    var thumb = $(slider.$slides[i]).data();
+                    if (i == '0') {
+                        i = "01";
+                    } else if (i == '1') {
+                        i = "02";
+                    } else if (i == '2') {
+                        i = "03";
+                    }
+                    return '<a class="dot"><span>' + i + '</span></a>';
+                },
+            });
+
+            $('.video').on('ended', function() {
+                {
+                    $('.video_slider').slick('slickNext');
+                    
+                    for(let n = 0; n < 3; n++) {
+                        $('.video')[n].currentTime = 0;
+                        if($('.video')[n].currentTime === 0) {
+                            $('.video')[n].play();
+                        }
+                    }
+                };
+            });
+            
+            $('.dot').on('click', function() {
+                {
+                    $('.video_slider').slick('slickNext');
+                    
+                    for(let n = 0; n < 3; n++) {
+                        $('.video')[n].currentTime = 0;
+                        if($('.video')[n].currentTime === 0) {
+                            $('.video')[n].play();
+                        }
+                    }
+                };
+            });
+
+            $('.prev').on('click', function() {
+                {
+                    $('.video_slider').slick('slickNext');
+                    
+                    for(let n = 0; n < 3; n++) {
+                        $('.video')[n].currentTime = 0;
+                        if($('.video')[n].currentTime === 0) {
+                            $('.video')[n].play();
+                        }
+                    }
+                };
+            });
+            
+            $('.next').on('click', function() {
+                {
+                    $('.video_slider').slick('slickNext');
+                    
+                    for(let n = 0; n < 3; n++) {
+                        $('.video')[n].currentTime = 0;
+                        if($('.video')[n].currentTime === 0) {
+                            $('.video')[n].play();
+                        }
+                    }
+                };
+            });
+
+            $(window).bind('resize load', function(){
+                var w_h = $(window).height();
+                
+                $(".fullpage").css("height",w_h);
+            });
+        }
+        
+        $(window).load(function() {
+            $('video')[0].play();
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="fullpage">
+            <div class="section">
+                <div id="header">
+                    <div class="inner">
+                        <h1 class="logo"><a href="javascript:void(0);">차 여성의학연구소 IVF센터</a></h1>
+                        <div class="gnb">
+                            <ul>
+                                <li><a href="http://www.chamc.co.kr/media/press_list/infertility.cha" target="_blank">언론보도</a></li>
+                                <li><a href="http://www.chamc.co.kr/performance/research/infertility.cha?page=2&keyword=" target="_blank">연구업적</a></li>
+                                <li><a href="https://www.youtube.com/channel/UCFfx5-wcfQuKdoGJat5svdA" target="_blank">유튜브</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_visual">
+                    <div class="main_slider">
+                        <div class="visual v01">1</div>
+                    </div>
+                </div>
+                <div class="main_wrap">
+                    <div class="main_conts">
+                        <div class="top_conts_area">
+                            <div class="txt_area">
+                                <div class="txt_box">
+                                    <p class="tit">85년 이후 약 30만명이 임신에 성공하였습니다.</p>
+                                    <strong class="tit2">세계 3대 난임센터 <br>‘차 여성의학연구소’</strong>
+                                    <P class="desc">한국, 호주를 비롯해 세계 33개의 난임센터가 있으며, <br>
+                                        1985년 이후 국내에서 매년 약 1만명의 아이가 <br>
+                                        태어나고 있습니다. (대한민국 출생아의 약 5%)
+                                    </P>
+                                </div>
+                            </div>
+                            <div class="video_slider_area">
+                                <div class="video_slider">
+                                    <div class="video_cont v01">
+                                        <div class="video_area">
+                                            <video muted="muted" class="video" id="vid" controls>
+                                                <source src="/asset/video/main01.mp4" type="video/mp4" />
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="video_cont v02">
+                                        <div class="video_area">
+                                            <video muted="muted" class="video" id="vid" controls>
+                                                <source src="/asset/video/main02.mp4" type="video/mp4" />
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="indicator">
+                                    <span class="prev"></span>
+                                    <span class="next"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link_box_area">
+                            <ul class="link_box_list">
+                                <li class="ivf_01">
+                                    <a href="https://chaimc.chamc.co.kr/default.cha" target="_blank">
+                                        <span>강남</span>
+                                    </a>
+                                </li>
+                                <li class="ivf_02">
+                                    <a href="https://seoul.chamc.co.kr/default.aspx" target="_blank">
+                                        <span>서울역</span>
+                                    </a>
+                                </li>
+                                <li class="ivf_03">
+                                    <a href="https://jamsil.chamc.co.kr/default.cha" target="_blank">
+                                        <span>잠실</span>
+                                    </a>
+                                </li>
+                                <li class="ivf_04">
+                                    <a href="https://ivf.chamc.co.kr/default.cha" target="_blank">
+                                        <span>분당</span>
+                                    </a>
+                                </li>
+                                <li class="ivf_05">
+                                    <a href="https://ilsanivf.chamc.co.kr/default.cha" target="_blank">
+                                        <span>일산</span>
+                                    </a>
+                                </li>
+                                <li class="ivf_06">
+                                    <a href="https://daegu.chamc.co.kr/default.aspx" target="_blank">
+                                        <span>대구</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="link_box_list v2">
+                                <li class="aus_01">
+                                    <a href="https://www.cityfertility.com.au/clinics/brisbane-ivf-and-fertility-clinic/" target="_blank">
+                                        <span>브리즈번<br>뉴스테드</span>
+                                    </a>
+                                </li>
+                                <li class="aus_02">
+                                    <a href="https://www.cityfertility.com.au/clinics/brisbane-southside-ivf-and-fertility-clinic/" target="_blank">
+                                        <span>브리즈번<br>써니뱅크</span>
+                                    </a>
+                                </li>
+                                <li class="aus_03">
+                                    <a href="https://www.cityfertility.com.au/clinics/gold-coast-ivf-and-fertility-clinic/" target="_blank">
+                                        <span>골드코스트<br>로비나</span>
+                                    </a>
+                                </li>
+                                <li class="aus_04">
+                                    <a href="https://www.cityfertility.com.au/clinics/toowoomba-fertility-and-ivf-services/" target="_blank">
+                                        <span>투움바</span>
+                                    </a>
+                                </li>
+                                <li class="aus_05">
+                                    <a href="https://www.cityfertility.com.au/clinics/sydney-cbd/" target="_blank">
+                                        <span>시드니<br>CBD</span>
+                                    </a>
+                                </li>
+                                <li class="aus_06">
+                                    <a href="https://www.cityfertility.com.au/clinics/sydney-ivf-and-fertility-clinic/" target="_blank">
+                                        <span>시드니<br>리버풀</span>
+                                    </a>
+                                </li>
+                                <li class="aus_07">
+                                    <a href="https://www.cityfertility.com.au/clinics/miranda-sydney/" target="_blank">
+                                        <span>시드니<br>미란다</span>
+                                    </a>
+                                </li>
+                                <li class="aus_08">
+                                    <a href="https://www.cityfertility.com.au/clinics/gregory-hills-ivf-and-fertility-clinic/" target="_blank">
+                                        <span>그레고리<br>힐스</span>
+                                    </a>
+                                </li>
+                                <li class="aus_09">
+                                    <a href="https://www.cityfertility.com.au/clinics/bundoora-fertility-and-ivf-clinic/" target="_blank">
+                                        <span>멜버른<br>분두라</span>
+                                    </a>
+                                </li>
+                                <li class="aus_10">
+                                    <a href="https://www.cityfertility.com.au/clinics/melbourne-notting-hill-ivf-and-fertility-clinic/" target="_blank">
+                                        <span>멜버른<br>노팅힐</span>
+                                    </a>
+                                </li>
+                                <li class="aus_11">
+                                    <a href="https://www.cityfertility.com.au/clinics/melbourne-fertility-and-ivf-clinic/" target="_blank">
+                                        <span>멜버른<br>세인트 킬다</span>
+                                    </a>
+                                </li>
+                                <li class="aus_12">
+                                    <a href="https://www.cityfertility.com.au/clinics/perth-claremont-fertility-and-ivf-clinic/" target="_blank">
+                                        <span>퍼스<br>클레어몬트</span>
+                                    </a>
+                                </li>
+                                <li class="aus_13">
+                                    <a href="https://www.cityfertility.com.au/clinics/perth-applecross-fertility-and-ivf-clinic/" target="_blank">
+                                        <span>퍼스<br>애플크로스</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

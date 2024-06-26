@@ -1,0 +1,52 @@
+@charset 'utf-8';
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+/* NaverNanumSquareNeo */
+@font-face{ 
+	font-weight:100; /* Light */
+	font-style:normal;
+	font-family:"NaverNanumSquareNeo";
+	src:url('fonts/eot/NanumSquareNeoTTF-aLt.eot'); 
+	src:url('fonts/eot/NanumSquareNeoTTF-aLt.eot?#iefix') format('embedded-opentype'), 
+		url('fonts/woff/NanumSquareNeoTTF-aLt.woff') format('woff');
+}
+@font-face{ 
+	font-weight:400; /* Regular */
+	font-style:normal;
+	font-family:"NaverNanumSquareNeo";
+	src:url('fonts/eot/NanumSquareNeoTTF-bRg.eot'); 
+	src:url('fonts/eot/NanumSquareNeoTTF-bRg.eot?#iefix') format('embedded-opentype'), 
+	url('fonts/woff/NanumSquareNeoTTF-bRg.woff') format('woff'),
+	url('fonts/woff/NanumSquareNeoTTF-bRg.woff2') format('woff2'),
+	url('fonts/woff/NanumSquareNeoTTF-bRg.otf') format('opentype');
+}
+@font-face{ 
+	font-weight:700; /* Bold */
+	font-style:normal;
+	font-family:"NaverNanumSquareNeo";
+	src:url('fonts/eot/NanumSquareNeoTTF-cBd.eot'); 
+	src:url('fonts/eot/NanumSquareNeoTTF-cBd.eot?#iefix') format('embedded-opentype'), 
+	url('fonts/woff/NanumSquareNeoTTF-cBd.woff') format('woff'),
+	url('fonts/woff/NanumSquareNeoTTF-cBd.woff2') format('woff2'),
+	url('fonts/woff/NanumSquareNeoTTF-cBd.otf') format('opentype');
+}
+@font-face{
+	font-weight:800; /* Extra Bold */
+	font-style:normal;
+	font-family:"NaverNanumSquareNeo";
+	src:url('fonts/eot/NanumSquareNeoTTF-dEb.eot'); 
+	src:url('fonts/eot/NanumSquareNeoTTF-dEb.eot?#iefix') format('embedded-opentype'), 
+	url('fonts/woff/NanumSquareNeoTTF-dEb.woff') format('woff'),
+	url('fonts/woff/NanumSquareNeoTTF-dEb.woff2') format('woff2'),
+	url('fonts/woff/NanumSquareNeoTTF-dEb.otf') format('opentype');
+}
+@font-face{
+	font-weight:900; /* Heavy */
+	font-style:normal;
+	font-family:"NaverNanumSquareNeo";
+	src:url('fonts/eot/NanumSquareNeoTTF-eHv.eot'); 
+	src:url('fonts/eot/NanumSquareNeoTTF-eHv.eot?#iefix') format('embedded-opentype'), 
+	url('fonts/woff/NanumSquareNeoTTF-eHv.woff') format('woff'),
+	url('fonts/woff/NanumSquareNeoTTF-eHv.woff2') format('woff2'),
+	url('fonts/woff/NanumSquareNeoTTF-eHv.otf') format('opentype');
+}
